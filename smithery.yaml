@@ -1,0 +1,16 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - apifyToken
+    properties:
+      apifyToken:
+        type: string
+        description: Apify API token for JiStudio YouTube Transcript & Downloader Actors
+  commandFunction: |-
+    (config) => ({
+      command: 'node',
+      args: ['bin/youtube-mcp.mjs'],
+      env: { APIFY_TOKEN: config.apifyToken }
+    })

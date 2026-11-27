@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "youtube-transcript-rag": {
+      "command": "node",
+      "args": [
+        "/ABS/PATH/TO/youtube-transcript-mcp/bin/youtube-mcp.mjs"
+      ],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN"
+      }
+    }
+  }
+}
