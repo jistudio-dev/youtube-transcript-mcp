@@ -1,32 +1,40 @@
 {
-  "name": "@jistudio/youtube-transcript-mcp",
+  "name": "youtube-heatmap-mcp",
   "version": "1.0.0",
-  "description": "Zero-dependency YouTube Transcript, SRT, Viral Heatmap & Cloud MP4/M4A MCP Server + Python/Node SDK (No Cookies, Cloud-IP Safe)",
+  "description": "Zero-dependency YouTube Transcript, SRT & Viral Heatmap MCP Server + Node.js ESM SDK (No Cookies, Cloud-IP Safe via Apify)",
   "type": "module",
-  "main": "node/index.mjs",
-  "bin": {
-    "youtube-transcript-mcp": "./bin/youtube-mcp.mjs"
+  "main": "./node/index.mjs",
+  "exports": {
+    ".": "./node/index.mjs"
   },
-  "scripts": {
-    "start": "node ./bin/youtube-mcp.mjs"
-  },
+  "files": [
+    "bin/",
+    "node/",
+    "configs/",
+    "smithery.yaml",
+    "README.md",
+    "LICENSE"
+  ],
   "engines": {
     "node": ">=18.0.0"
   },
   "keywords": [
-    "youtube",
-    "youtube-transcript",
     "mcp",
     "mcp-server",
+    "youtube",
+    "youtube-transcript",
     "srt",
     "rag",
-    "claude",
-    "cursor",
     "apify"
   ],
+  "author": "JiStudio <dev@jistudio.dev>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/jistudio-dev/youtube-transcript-mcp.git"
+  },
+  "homepage": "https://jistudio-dev.github.io/youtube-transcript-mcp/",
+  "bin": {
+    "youtube-heatmap-mcp": "./bin/youtube-mcp.mjs"
   }
 }

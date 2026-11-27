@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jistudio-youtube-transcript"
+version = "1.0.0"
+description = "Zero-dependency Python SDK for cloud-IP-safe YouTube transcripts, SRT subtitles, Top-5 Most-Replayed viral heatmap peaks & MP4/M4A downloads."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "JiStudio", email = "dev@jistudio.dev"}]
+keywords = ["youtube", "youtube-transcript", "srt", "rag", "heatmap", "apify"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://jistudio-dev.github.io/youtube-transcript-mcp/"
+Repository = "https://github.com/jistudio-dev/youtube-transcript-mcp"
+Documentation = "https://jistudio-dev.github.io/youtube-transcript-mcp/"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["youtube_transcript_sdk*"]
